@@ -125,3 +125,22 @@ function square(n){
 }
 ```
 
+### Print all the arguments passed to a function
+```javascript
+function add() {
+  // Arguments are array like object, you can you normal for-loop or for-of loop to access it
+  console.log(arguments);
+}
+```
+
+### Write a function to add N numbers passed as an arguements
+```javascript
+function add() {
+  let sum = 0;
+  for(let n of arguments) {
+    sum += n;
+  }
+  return sum;
+}
+
+```
